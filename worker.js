@@ -1,4 +1,4 @@
-importScripts('lib/sql.js', 'lib/boshiamy.db.js', 'lib/cloud-liu.js');
+importScripts('lib/sql.min.js', 'lib/boshiamy.db.js', 'lib/cloud-liu.js');
 
 self.cliu = new CloudLiu(self);
 self.addEventListener('message', function(e) {
