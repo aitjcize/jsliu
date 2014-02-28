@@ -1,9 +1,11 @@
+'use strict';
+
 importScripts('lib/sql.min.js', 'lib/boshiamy.db.js', 'lib/cloud-liu.js');
 
 self.cliu = new CloudLiu(self);
 self.addEventListener('message', function(e) {
   var data = e.data;
-  
+
   switch (data.cmd) {
   case 'handle_Key':
     var ret = self.cliu.handle_Key(data.value);
